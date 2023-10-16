@@ -28,8 +28,26 @@ button {
 
 button:hover {
   background-color: #102f5e;
+  color: #fff;
 }
 
 button:hover > i {
   color: #fff;
 }
+
+button i {
+  color: #102f5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* To do header */
