@@ -41,7 +41,7 @@ const saveTodo = (text, done = 0, save = 1) => {
   }
 
   if (save) {
-    saveTodoLocalStorage((text, done));
+    saveTodoLocalStorage({ text, done });
   }
 
   todoList.appendChild(todo);
