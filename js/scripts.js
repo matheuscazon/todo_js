@@ -4,7 +4,7 @@ const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
-const cancelEditBtn = document.querySelector("#canel-edit-btn");
+const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 
 // Funções
 const saveTodo = (text) => {
@@ -36,6 +36,12 @@ const saveTodo = (text) => {
   todoInput.focus();
 };
 
+const toggleForms = () => {
+  editForm.classList.toggle("hide");
+  todoForm.classList.toggle("hide");
+  todoList.classList.toggle("hide");
+};
+
 // Eventos
 todoForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -60,6 +66,12 @@ document.addEventListener("click", (e) => {
   }
 
   if (targetEl.classList.contains("edit-todo")) {
-    console.log("Editou");
+    toggleForms();
   }
+});
+
+cancelEditBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  toggleForms();
 });
