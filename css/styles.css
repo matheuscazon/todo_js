@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background-image: url("../img/bg.jpg");
   background-position: center;
@@ -53,7 +57,7 @@ select {
 /* To do header */
 .todo-container {
   max-width: 450px;
-  margin: 3rem auto;
+  margin: 8rem auto;
   background-color: #fdfdfd;
   padding: 1.5rem;
   border-radius: 15px;
