@@ -177,3 +177,5 @@ filterBtn.addEventListener("change", (e) => {
 
   filterTodos(filterValue);
 });
+
+// Local Storage
